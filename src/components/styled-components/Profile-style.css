@@ -1,0 +1,52 @@
+.profile{
+background-color: rgb(158, 94, 161);
+}
+
+
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(208, 140, 171);
+    box-shadow: -33px -23px 43px 39px rgba(253, 251, 253, 0.4);
+}
+
+.description{
+justify-content: center;
+align-items: center;
+width: 200px;
+margin: auto;
+}
+
+.name,.tag,.location{
+    color:rgb(51, 49, 49);
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.stats{
+    display: flex;
+    margin: auto;
+    width: 300px;
+    list-style: none;
+    background-color: rgba(208, 140, 171, 0.9);
+    border-radius: 8px;
+    justify-content: center;
+    color: rgb(51, 49, 49);
+    
+}
+
+.stats-item{
+    margin-right: 20px;
+    text-align: center;
+}
+
+.label,.quantity{
+    font-weight: bold;
+}
+

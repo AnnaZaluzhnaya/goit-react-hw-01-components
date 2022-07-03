@@ -1,6 +1,8 @@
+import styles from './styled-components/TransactionHistory-styles.css'
+
 export function TransactionHistory({ items }) {
     return (
-        <table class="transaction-history">
+        <table className="transaction-history">
     <thead>
         <tr>
         <th>Type</th>
@@ -9,18 +11,15 @@ export function TransactionHistory({ items }) {
         </tr>
     </thead>
 
-    <tbody>
-        <tr>
-        <td>Invoice</td>
-        <td>125</td>
-        <td>USD</td>
-        </tr>
-        <tr>
-        <td>Withdrawal</td>
-        <td>85</td>
-        <td>USD</td>
-        </tr>
-    </tbody>
+            <tbody>
+                {items.map(({ type, amount, currency, id }) => (
+            <tr key={id}>
+                <td>{type}</td>
+                <td>{amount}</td>
+                <td>{currency}</td>
+            </tr>
+                ))}
+            </tbody>
     </table>
     )
 }
