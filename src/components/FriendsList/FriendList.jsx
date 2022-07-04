@@ -1,23 +1,23 @@
-import css from './styled-components/FriendsList-style.css'
+import styles from './FriendsList.module.css'
 
 export function FriendsListItem({ avatar, name, isOnline}) {
   return (
-    <li className="item-friend">
-      <span className="status"></span>
+    <li className={styles.itemFriend}>
+      <span className={styles.status}></span>
       <img
         src={avatar}
         alt="User avatar"
         width="100"
         className='photo'
       />
-      <p className="name-friend">{name}</p>
+      <p className={styles.nameFriend}>{name}</p>
     </li>
   )
 }
 
 export function FriendList({ friends }) {
     return (
-    <ul className='friendList'>
+    <ul className={styles.friendList}>
     {friends.map(({ avatar, name, isOnline, id }) => (
         <FriendsListItem
             key={id}
@@ -29,3 +29,4 @@ export function FriendList({ friends }) {
     </ul>
     )
 }
+

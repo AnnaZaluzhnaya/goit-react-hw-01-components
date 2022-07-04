@@ -2,6 +2,12 @@
 background-color: rgb(158, 94, 161);
 }
 
+.description {
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: auto;
+}
 
 
 .avatar{
@@ -12,12 +18,7 @@ background-color: rgb(158, 94, 161);
     box-shadow: -33px -23px 43px 39px rgba(253, 251, 253, 0.4);
 }
 
-.description{
-justify-content: center;
-align-items: center;
-width: 200px;
-margin: auto;
-}
+
 
 .name,.tag,.location{
     color:rgb(51, 49, 49);
@@ -32,7 +33,10 @@ margin: auto;
 .stats{
     display: flex;
     margin: auto;
-    width: 300px;
+    width: 400px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     background-color: rgba(208, 140, 171, 0.9);
     border-radius: 8px;
@@ -41,12 +45,14 @@ margin: auto;
     
 }
 
-.stats-item{
+.statsItem{
     margin-right: 20px;
-    text-align: center;
 }
 
 .label,.quantity{
     font-weight: bold;
 }
 
+.label{
+    margin-right: 10px;
+}

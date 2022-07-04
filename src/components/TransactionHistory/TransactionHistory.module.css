@@ -5,7 +5,7 @@ th,td{
 
 }
 
-.transaction-history{
+.transactionHistory{
     border: 3px solid grey;
     margin: auto;
     text-transform: uppercase;

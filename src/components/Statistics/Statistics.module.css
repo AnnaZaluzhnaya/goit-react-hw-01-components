@@ -26,7 +26,7 @@ color: white;
     box-shadow: -33px -23px 43px 39px rgba(253, 251, 253, 0.4);box-shadow: -33px -23px 43px 39px rgba(253, 251, 253, 0.4);
 }
 
-.stat-list{
+.statList{
     display: flex;
     list-style: none;
 }
