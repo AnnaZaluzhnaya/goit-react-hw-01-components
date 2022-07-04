@@ -1,6 +1,6 @@
 import styles from './FriendsList.module.css'
 
-export function FriendsListItem({ avatar, name, isOnline}) {
+export function FriendsListItem({ avatar, name}) {
   return (
     <li className={styles.itemFriend}>
       <span className={styles.status}></span>
@@ -18,12 +18,12 @@ export function FriendsListItem({ avatar, name, isOnline}) {
 export function FriendList({ friends }) {
     return (
     <ul className={styles.friendList}>
-    {friends.map(({ avatar, name, isOnline, id }) => (
+    {friends.map(({ avatar, name, id }) => (
         <FriendsListItem
             key={id}
             avatar={avatar}
             name={name}
-            isOnline={isOnline}
+            
         />
     ))}
     </ul>
