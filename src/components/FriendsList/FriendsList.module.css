@@ -22,23 +22,27 @@
         box-shadow: -33px -23px 43px 39px rgba(253, 251, 253, 0.4);
 }
 
-/* .offline{
-border-radius: 50%;
-border: 2px solid rgb(204, 19, 19);
+.offline{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(204, 19, 19);
     
 }
 
 .online {
-border-radius: 50%;
-border: 2px solid rgb(46, 158, 28);
-} */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(46, 158, 28);
+}
 
-.status{
+/* .status{
     border-radius: 50%;
     background-color: aqua;
     width: 20px;
     height: 20px;
-}
+} */
 
 .photo{
     width: 60px;
