@@ -15,14 +15,14 @@ const Statistics = ({ title, stats }) => {
   );
 };
 
-export function StatisticsItem({ label, percentage }) {
+const StatisticsItem = ({ label, percentage }) => {
   return (
     <li className={styles.item}>
       <span className={styles.label}>{label}</span>
       <span className={styles.percentage}>{percentage}%</span>
     </li>
   );
-}
+};
 
 Statistics.propTypes = {
   title: PropTypes.string.isRequired,

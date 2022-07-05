@@ -15,7 +15,8 @@ const FriendList = ({ friends }) => {
     </ul>
   );
 };
-export function FriendsListItem({ avatar, name, isOnline }) {
+
+const FriendsListItem = ({ avatar, name, isOnline }) => {
   return (
     <li className={styles.itemFriend}>
       <span className={isOnline ? styles.online : styles.offline}></span>
@@ -28,7 +29,7 @@ export function FriendsListItem({ avatar, name, isOnline }) {
       <p className={styles.nameFriend}>{name}</p>
     </li>
   );
-}
+};
 
 FriendsListItem.propTypes = {
   avatar: PropTypes.string.isRequired,

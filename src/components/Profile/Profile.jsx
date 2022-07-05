@@ -10,19 +10,19 @@ const Profile = ({
 }) => {
   return (
     <div className={styles.profile}>
-      <DescriptionContainer
+      <Description
         username={username}
         tag={tag}
         location={location}
         avatar={avatar}
       />
 
-      <StatsContainer followers={followers} views={views} likes={likes} />
+      <Stats followers={followers} views={views} likes={likes} />
     </div>
   );
 };
 
-export function DescriptionContainer({ avatar, location, tag, username }) {
+const Description = ({ avatar, location, tag, username }) => {
   return (
     <div className={styles.description}>
       <img src={avatar} alt="User avatar" className={styles.avatar} />
@@ -31,9 +31,9 @@ export function DescriptionContainer({ avatar, location, tag, username }) {
       <p className={styles.location}>{location}</p>
     </div>
   );
-}
+};
 
-export function StatsContainer({ followers, views, likes }) {
+const Stats = ({ followers, views, likes }) => {
   return (
     <ul className={styles.stats}>
       <li className={styles.statsItem}>
@@ -50,7 +50,7 @@ export function StatsContainer({ followers, views, likes }) {
       </li>
     </ul>
   );
-}
+};
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,

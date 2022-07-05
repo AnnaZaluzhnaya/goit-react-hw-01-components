@@ -26,7 +26,7 @@ const TransactionHistory = ({ items }) => {
   );
 };
 
-export function TransactionHistoryItem({ type, amount, currency }) {
+const TransactionHistoryItem = ({ type, amount, currency }) => {
   return (
     <tr>
       <td>{type}</td>
@@ -34,7 +34,7 @@ export function TransactionHistoryItem({ type, amount, currency }) {
       <td>{currency}</td>
     </tr>
   );
-}
+};
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
