@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className={styles.profile}>
-      <div className={styles.description}>
-        <img src={avatar} alt="User avatar" className={styles.avatar} />
-        <p className={styles.name}>{username}</p>
-        <p className={styles.tag}>@{tag}</p>
-        <p className={styles.location}>{location}</p>
-      </div>
+      <DescriptionContainer
+        username={username}
+        tag={tag}
+        location={location}
+        avatar={avatar}
+      />
 
       <ul className={styles.stats}>
         <li className={styles.statsItem}>
@@ -28,6 +28,17 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
     </div>
   );
 };
+
+export function DescriptionContainer({ avatar, location, tag, username }) {
+  return (
+    <div className={styles.description}>
+      <img src={avatar} alt="User avatar" className={styles.avatar} />
+      <p className={styles.name}>{username}</p>
+      <p className={styles.tag}>@{tag}</p>
+      <p className={styles.location}>{location}</p>
+    </div>
+  );
+}
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
