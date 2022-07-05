@@ -23,6 +23,8 @@
 }
 
 .offline {
+  display: block;
+  margin: 10px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -30,6 +32,8 @@
 }
 
 .online {
+  display: block;
+  margin: 10px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
