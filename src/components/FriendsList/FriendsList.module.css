@@ -1,50 +1,42 @@
-.friendList{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    background-color: rgb(158, 94, 161);
-    margin-bottom: 50px;
+.friendList {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  background-color: rgb(158, 94, 161);
+  margin-bottom: 50px;
 }
 
-.itemFriend{
-    margin-bottom: 50px;
-    margin-right: 100px;
-    margin-top: 50px;
+.itemFriend {
+  margin-bottom: 50px;
+  margin-right: 100px;
+  margin-top: 50px;
 }
 
-.nameFriend{
-    margin-top: 15px;
-    text-align: center;
-    color: rgb(105, 13, 95);
-    font-size: large;
-    font-weight: bold;
-    box-shadow: -33px -23px 43px 39px rgba(253, 251, 253, 0.4);
-        box-shadow: -33px -23px 43px 39px rgba(253, 251, 253, 0.4);
+.nameFriend {
+  margin-top: 15px;
+  text-align: center;
+  color: rgb(105, 13, 95);
+  font-size: large;
+  font-weight: bold;
+  box-shadow: -33px -23px 43px 39px rgba(253, 251, 253, 0.4);
+  box-shadow: -33px -23px 43px 39px rgba(253, 251, 253, 0.4);
 }
 
-.offline{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: rgb(204, 19, 19);
-    
+.offline {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(204, 19, 19);
 }
 
 .online {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: rgb(46, 158, 28);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(46, 158, 28);
 }
 
-/* .status{
-    border-radius: 50%;
-    background-color: aqua;
-    width: 20px;
-    height: 20px;
-} */
-
-.photo{
-    width: 60px;
-    height: 60px;
+.photo {
+  width: 60px;
+  height: 60px;
 }
