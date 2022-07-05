@@ -7,16 +7,22 @@ const Statistics = ({ title, stats }) => {
       <h2 className={styles.title}>{title}</h2>
 
       <ul className={styles.statList}>
-        {stats.map(({ id, label, percentage }) => (
-          <li className={styles.item} key={id}>
-            <span className={styles.label}>{label}</span>
-            <span className={styles.percentage}>{percentage}%</span>
-          </li>
+        {stats.map(({ label, percentage, id }) => (
+          <StatisticsItem key={id} label={label} percentage={percentage} />
         ))}
       </ul>
     </section>
   );
 };
+
+export function StatisticsItem({ label, percentage }) {
+  return (
+    <li className={styles.item}>
+      <span className={styles.label}>{label}</span>
+      <span className={styles.percentage}>{percentage}%</span>
+    </li>
+  );
+}
 
 Statistics.propTypes = {
   title: PropTypes.string.isRequired,
